@@ -1,0 +1,51 @@
+:root{
+    /* --bgColor: whitesmoke;
+    --textColor: rgb(253, 59, 59); */
+
+    --textColor : hsl(200, 15%, 8%);
+    --lightModeInput : hsl(0, 0%, 52%);
+    --bodyBackground : hsl(0, 0%, 98%);
+    --bgColor : hsl(0, 0%, 100%);
+
+}
+.darkTheme{
+    --bodyBackground : hsl(207, 26%, 17%);
+    --textColor : hsl(0, 0%, 100%);
+    --bgColor : hsl(209, 23%, 22%);
+    --lightModeInput : hsl(0, 0%, 52%);
+
+}
+.navbar{
+    background-color: var(--bgColor);
+    color: var(--textColor);
+}
+#root{
+    background-color: var(--bodyBackground);
+
+}
+.navbar-brand{
+    color: var(--textColor);
+}
+.nav-item .nav-link{
+    color: var(--textColor);
+}
+.form-check-label{
+    color: var(--textColor); 
+}
+.container1{
+    background-color: var(--bodyBackground);
+}
+.container h1{
+    color: var(--textColor);
+}
+.container h2{
+    color: var(--textColor);
+}
+.container p{
+    color: var(--lightModeInput);
+}
+/* .navbar-toggler-icon{
+    color: black;
+    background-color: black;
+} */
+/* navbar-dark bg-dark */

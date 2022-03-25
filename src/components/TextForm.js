@@ -8,15 +8,21 @@ export default function TextForm(props) {
    // console.log("uppercase button clicked" + text);
     let newText = text.toLocaleUpperCase();
     SetText(newText);
+    props.displayAlert('Converted to uppercase!', 'success')
   }
 
   const HandleLowClick = () => {
      let newText = text.toLocaleLowerCase();
      SetText(newText);
+     props.displayAlert('Converted to lowercase!', 'success')
+
    }
    const HandleRevClick = () => {
     let newText = text.split("").reverse().join("");
     SetText(newText);
+
+    props.displayAlert('Text reversed!', 'success')
+
   }
   
   const HandleCopyClick = () => {
@@ -25,11 +31,17 @@ export default function TextForm(props) {
     navigator.clipboard.writeText(text.value)
     // let newText = "";
     // SetText(newText);
+
+    props.displayAlert('Copied to clipboard!', 'success')
+
   }
 
   const HandleClrClick = () => {
     let newText = "";
     SetText(newText);
+
+    props.displayAlert('The text is cleared. Enter some text to analyze below!', 'success')
+
   }
 
   const HandleOnChange = (event) => {
@@ -40,7 +52,7 @@ export default function TextForm(props) {
 
   return (
       <>
-        <div className='container '>
+        <div className='container'>
           <h1>{props.heading}</h1>
           <div className="my-3">    
             <textarea className="form-control" value={text} id="myBox" 
@@ -62,7 +74,7 @@ export default function TextForm(props) {
           <p>👉{text.split(" ").length} words, {text.length} characters </p>
           <p>👉{0.08 * text.split(" ").length} Minutes read</p>
           <h2>Preview :</h2>
-          <p>{text}</p>
+          <p>{text ===`${"Enter text here"||""}`?"Enter some text to preview here !":text}</p>
         </div>
   
       

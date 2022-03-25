@@ -7,11 +7,11 @@ import { useState } from 'react';
 
 export default function Navbar(props) {
   
-  const [dark, setMode] = useState(false)
+  // const [dark, setMode] = useState(false)
 
   return (
 
-    <nav className= {dark ? "navbar navbar-expand-lg darkTheme" : "navbar navbar-expand-lg"}>
+    <nav className = {`navbar navbar-expand-lg ${props.mode}`}>
   <div className="container-fluid">
     <a className="navbar-brand" href="/">{props.title}</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +34,7 @@ export default function Navbar(props) {
 
       <div className="form-check form-switch mt-2">
         <input className="form-check-input "  type="checkbox" 
-        onChange={() => setMode(!dark)}
+        onClick={props.toggleMode}
         id="flexSwitchCheckDefault" />
         <label className="form-check-label"  htmlFor="flexSwitchCheckDefault">Dark Mode</label>
       </div>
@@ -45,7 +45,7 @@ export default function Navbar(props) {
 
   )
 }
-
+// onChange={() => setMode(!dark)}
 Navbar.propTypes = {
     title: PropTypes.string.isRequired
 }

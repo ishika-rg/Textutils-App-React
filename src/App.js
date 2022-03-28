@@ -29,6 +29,18 @@ function App() {
     if(mode === ''){
       setMode('darkTheme');
       displayAlert('Dark mode has been enabled !', 'success')
+
+      // To change title and blink it to bring it to notice
+
+      // setInterval(() => {
+      //   document.title = 'Textutils is amazing'
+      // }, 3000);
+      // setInterval(() => {
+      //   document.title = 'Install Textutils now!'
+      // }, 1500);
+
+
+
     }
     else{
       setMode('');

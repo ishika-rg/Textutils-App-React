@@ -34,6 +34,7 @@
 }
 .container1{
     background-color: var(--bodyBackground);
+    padding-bottom: 1.7rem;
 }
 .container h1{
     color: var(--textColor);
@@ -57,4 +58,13 @@
 .navbar-toggler-icon img{
     width: 100%;
     height: 100%;
+    color: var(--textColor);
+}
+
+
+
+.highlight{
+    color: green;
+    /* background-color: yellow; */
+    background-color: #EEF43B;
 }

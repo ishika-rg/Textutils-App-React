@@ -48,16 +48,56 @@ function App() {
     }
   }
 
+  const searchText =  () => {
+
+    let str = document.querySelector('.form-control');
+    console.log(str);
+
+    let para = document.getElementById('myBox');
+    console.log(para);
+
+    // if(para.includes(str)){
+    //   console.log('got it');
+
+      
+
+    // }else{
+    //   console.log('not found')
+    // }
+
+    // if(para.match(str)){
+    //   console.log('got it')
+
+    // }else{
+    //   console.log('not found')
+    // }
+
+    const word = str.value;
+    console.log(word)
+
+    let text = para.innerHTML;
+    console.log(text)
+
+
+    let regex = new RegExp(word, 'gi');
+
+    text = text.replace(/(<mark class="highlight">|<\/mark>)/gim, '');
+    const newText = text.replace(regex, '<mark class="highlight">$&</mark>');
+    para.innerHTML = newText;
+
+
+  }
+
 
   
 
   return (
     <>
 
-    <Navbar title ="TEXTUTILS" mode= {mode} toggleMode = {toggleMode}></Navbar>
+    <Navbar title ="TEXTUTILS" mode= {mode} toggleMode = {toggleMode} searchText = {searchText} ></Navbar>
     <Alert alert = {alert}></Alert>
-    <div className= {`container1 py-5 ${mode}` }>
-       <TextForm heading = "Enter the text to analyze below!" displayAlert = {displayAlert}></TextForm>
+    <div className= {`container1 pt-1 ${mode}` }>
+       <TextForm heading = "Enter the text to analyze below!" displayAlert = {displayAlert} searchText = {searchText}></TextForm>
     </div>
 
 

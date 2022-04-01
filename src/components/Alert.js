@@ -1,4 +1,5 @@
 import React from 'react'
+import './styles.css';
 
 function Alert(props) {
 
@@ -9,12 +10,17 @@ function Alert(props) {
   }
   return (
 
-  
+  <div  class = {`alertBtn ${props.mode}`}>
+    {
+      props.alert && <div className={`alert alert-${props.alert.name} alert-dismissible fade show m-0`} role="alert">
+      <strong>{capitalize(props.alert.name)}</strong> : {props.alert.msg}
+     {/* <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> */}
+         </div>
+    }
 
-    props.alert && <div className={`alert alert-${props.alert.name} alert-dismissible fade show m-0`} role="alert">
-       <strong>{capitalize(props.alert.name)}</strong> : {props.alert.msg}
-      {/* <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> */}
-   </div>
+  </div>
+
+    
   )
 }
 

@@ -60,6 +60,10 @@
     height: 100%;
     color: var(--textColor);
 }
+.alertBtn{
+    background-color: var(--bodyBackground);
+    height: 50px;
+}
 
 
 

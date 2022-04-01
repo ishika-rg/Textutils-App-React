@@ -95,7 +95,7 @@ function App() {
     <>
 
     <Navbar title ="TEXTUTILS" mode= {mode} toggleMode = {toggleMode} searchText = {searchText} ></Navbar>
-    <Alert alert = {alert}></Alert>
+    <Alert alert = {alert} mode ={mode} toggleMode = {toggleMode}></Alert>
     <div className= {`container1 pt-1 ${mode}` }>
        <TextForm heading = "Enter the text to analyze below!" displayAlert = {displayAlert} searchText = {searchText}></TextForm>
     </div>

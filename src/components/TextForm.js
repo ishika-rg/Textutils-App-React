@@ -59,11 +59,11 @@ export default function TextForm(props) {
             onChange ={HandleOnChange} rows="8"></textarea>
           </div>
 
-          <div className="btn btn-secondary my-2 ms-3" onClick={HandleUpClick}>Convert to Uppercase</div>
-          <div className="btn btn-secondary my-2 ms-3" onClick={HandleLowClick}>Convert to Lowercase</div>
-          <div className="btn btn-secondary my-2 ms-3" onClick={HandleRevClick}>Reverse Text</div>
-          <div className="btn btn-secondary my-2 ms-3" onClick={HandleCopyClick}>Copy Text</div>
-          <div className="btn btn-secondary my-2 ms-3" onClick={HandleClrClick}>Clear Text</div>
+          <button disabled = {text.length === 0} className="btn btn-secondary my-2 ms-3" onClick={HandleUpClick}>Convert to Uppercase</button>
+          <button disabled = {text.length === 0} className="btn btn-secondary my-2 ms-3" onClick={HandleLowClick}>Convert to Lowercase</button>
+          <button disabled = {text.length === 0} className="btn btn-secondary my-2 ms-3" onClick={HandleRevClick}>Reverse Text</button>
+          <button disabled = {text.length === 0} className="btn btn-secondary my-2 ms-3" onClick={HandleCopyClick}>Copy Text</button>
+          <button disabled = {text.length === 0} className="btn btn-secondary my-2 ms-3" onClick={HandleClrClick}>Clear Text</button>
 
 
    
@@ -71,7 +71,9 @@ export default function TextForm(props) {
 
         <div className="container my-3">
           <h2>Your text summary :</h2>
-          <p>👉{text.split(" ").length} words, {text.length} characters </p>
+          <p>👉{text.split(/\s+/).filter((ele) => {
+            return ele.length !== 0
+          }).length} words, {text.length} characters </p>
           <p>👉{0.08 * text.split(" ").length} Minutes read</p>
           <h2>Preview :</h2>
           <p>{text ===`${"Enter text here"||""}`?"Enter some text to preview here !":text}</p>

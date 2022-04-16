@@ -15,12 +15,16 @@
     --lightModeInput : hsl(0, 0%, 97%);
 
 }
+html{
+    max-height: 100vh;
+ }
 .navbar{
     background-color: var(--bgColor);
     color: var(--textColor);
 }
 #root{
     background-color: var(--bodyBackground);
+    max-height: 100vh;
 
 }
 .navbar-brand{
@@ -34,12 +38,12 @@
 }
 .container1{
     background-color: var(--bodyBackground);
-    padding-bottom: 1.7rem;
-}
-.container h1{
-    color: var(--textColor);
+    /* padding-bottom: 1.7rem; */
 }
 .container h2{
+    color: var(--textColor);
+}
+.container h3{
     color: var(--textColor);
 }
 .container p{
@@ -71,4 +75,10 @@
     color: green;
     /* background-color: yellow; */
     background-color: #EEF43B;
+}
+
+.main_container{
+    background-color: var(--bodyBackground);
+    padding-bottom: 30px;
+    overflow-y: hidden;
 }

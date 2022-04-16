@@ -53,8 +53,8 @@ export default function TextForm(props) {
   return (
       <>
         <div className='container'>
-          <h1>{props.heading}</h1>
-          <div className="my-3">    
+          <h2>{props.heading}</h2>
+          <div className="my-2">    
             <textarea className="form-control" value={text} id="myBox" 
             onChange ={HandleOnChange} rows="8"></textarea>
           </div>
@@ -69,13 +69,13 @@ export default function TextForm(props) {
    
         </div>
 
-        <div className="container my-3">
-          <h2>Your text summary :</h2>
+        <div className="container mt-3">
+          <h3>Your text summary :</h3>
           <p>👉{text.split(/\s+/).filter((ele) => {
             return ele.length !== 0
           }).length} words, {text.length} characters </p>
           <p>👉{0.08 * text.split(" ").length} Minutes read</p>
-          <h2>Preview :</h2>
+          <h3>Preview :</h3>
           <p>{text ===`${"Enter text here"||""}`?"Enter some text to preview here !":text}</p>
         </div>
   

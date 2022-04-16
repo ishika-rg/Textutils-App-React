@@ -95,10 +95,16 @@ function App() {
     <>
 
     <Navbar title ="TEXTUTILS" mode= {mode} toggleMode = {toggleMode} searchText = {searchText} ></Navbar>
+
+    <div className={`main_container ${mode}`} mode = {mode} toggleMode = {toggleMode}>
+
     <Alert alert = {alert} mode ={mode} toggleMode = {toggleMode}></Alert>
-    <div className= {`container1 pt-1 ${mode}` }>
+    <div className= "container1 py-2">
        <TextForm heading = "Enter the text to analyze below!" displayAlert = {displayAlert} searchText = {searchText}></TextForm>
     </div>
+
+    </div>
+   
 
 
     </>

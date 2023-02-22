@@ -46,16 +46,15 @@ Users are able to:
 
 </td>
 <td>
-![bandicam 2023-02-22 23-30-52-310](https://user-images.githubusercontent.com/90634018/220717310-578b4d2e-f157-4c1f-8e1a-a1bca267b5ce.jpg)
+
+
+![bandicam 2023-02-22 23-30-52-310](https://user-images.githubusercontent.com/90634018/220722075-a5f70859-0811-4f86-940b-852c50d9c613.jpg)
+
 </td>
 
+
 </tr>
 
-<tr>
-
-<td><img src="./OutputImages/desktop3.jpg"></td>
-<td><img src="./OutputImages/desktop4.jpg"></td>
-</tr>
 
 </table>
 
@@ -70,7 +69,8 @@ Users are able to:
 
 </td>
 <td>
-![bandicam 2023-02-22 23-34-36-984](https://user-images.githubusercontent.com/90634018/220717977-352cc78d-0f46-4565-9ae1-71790da8789d.jpg)
+
+![bandicam 2023-02-22 23-34-36-984](https://user-images.githubusercontent.com/90634018/220721829-130a42c2-3d1e-4907-8baf-a692a8af5d77.jpg)
 
 </td>
 

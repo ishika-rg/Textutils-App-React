@@ -46,7 +46,6 @@ Users are able to:
 
 </td>
 <td>
-
 ![bandicam 2023-02-22 23-30-52-310](https://user-images.githubusercontent.com/90634018/220717310-578b4d2e-f157-4c1f-8e1a-a1bca267b5ce.jpg)
 </td>
 

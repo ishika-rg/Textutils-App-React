@@ -22,7 +22,7 @@ The textutils app is a utility by which you can change your text as per your wis
 Users are able to: 
 
 - View the optimal layout for the site depending on their device's screen size
-- Cover text to uppercase, lowecase, revert text, copy text and clear text
+- Convert text to uppercase, lowecase, revert text, copy text and clear text
 - Change dark mode of the app
 - Get the summary of the text
 - Preview the text with applied filter
